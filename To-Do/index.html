@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 6%;
+            border: 1px solid gray;
+            margin: auto;
+            width: 60%;
+            height: 550px;
+            text-align: center;
+        }
+        h2 {
+            color: gray;
+        }
+        h4 {
+            color: brown;
+            font-style: italic;
+        }
+        li {
+            color: brown;
+            font-style: italic;
+            border-bottom: 1px solid grey;
+            text-decoration: none;
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h2>
+                To Do Application
+            </h2>
+        </div>
+        <div>
+            <input type="text" id="text-input" placeholder="Type Your Task">
+            <button type="submit" onclick="addTask()">Add Task</button>
+        </div>
+        <div>
+            <h4>List Of Task</h4>
+            <ul id="task-list">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
